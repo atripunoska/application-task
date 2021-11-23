@@ -1,18 +1,30 @@
 .footer {
   display: flex;
   width: calc(100% - 20px);
-  padding: 20px 0;
+  @include breakpoint-up(large){
+    width: calc(100% - 300px);
+  }
+  padding: 65px 0;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
   margin: auto;
 
   &__logo {
-    width: 122px;
+    flex: 50%;
+    @include breakpoint-up(large){
+      flex: 25%;
+    }
+    img {
+      width: 122px;
+    }
   }
-  &__widgets {
-    display: flex;
-    flex-wrap: wrap;
+
+  .footer__menu {
+    margin-bottom: 50px;
+    flex: 50%;
+    @include breakpoint-up(large){
+      flex: 25%;
+    }
     .footer__menu-list {
       list-style: none;
       margin: 0;
@@ -24,14 +36,18 @@
         text-decoration: underline;
         color: $black;
         font-size: $font-sm;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          color: $primary;
+          text-decoration: none;
+        }
       }
     }
     .footer__menu-name {
       font-size: 18px;
+      margin-top: 0;
+      font-family: 'Helvetica Neue Medium',sans-serif;
       font-weight: normal;
     }
-  }
-  .footer__menu {
-    margin-bottom: 50px;
   }
 }

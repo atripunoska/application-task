@@ -84,9 +84,10 @@ const footerWidgets = [
 function Footer() {
     return (
         <footer className="footer">
-            <img src={Logo} alt="Valtech" className="footer__logo" />
-
-            <div className="footer__widgets">{displayWidgets()}</div>
+            <div className="footer__logo">
+                <img src={Logo} alt="Valtech"/>
+            </div>
+           {displayWidgets()}
         </footer>
     );
 
