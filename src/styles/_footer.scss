@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  width: calc(100% - 145px);
+  width: calc(100% - 20px);
   padding: 20px 0;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -32,6 +32,6 @@
     }
   }
   .footer__menu {
-    width: 260px;
+    margin-bottom: 50px;
   }
 }

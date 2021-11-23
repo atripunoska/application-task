@@ -7,8 +7,8 @@ import img4 from "../assets/images/large-emerging technologies-4.png";
 
 function TeasersSection() {
     return (
-        <section id="sectionThree" className="teasers">
-            <h1 className="teasers__title">Section 2</h1>
+        <section id="sectionTwo" className="teasers">
+            <h1 className="teasers__title">Section Two</h1>
             <div className="teasers__grid">
                 <TeaserCard
                     title="Teaser 1"

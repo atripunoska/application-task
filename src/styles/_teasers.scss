@@ -3,7 +3,11 @@
     padding-top: 154px;
     padding-bottom: 88px;
   }
-  padding: 50px;
+  @include breakpoint-up(medium) {
+    padding: 50px;
+  }
+  padding: 50px 15px;
+
   > h1 {
     @include breakpoint-up(large) {
       margin-left: 280px;
@@ -19,7 +23,7 @@
       margin: 20px 35px;
       display: flex;
       flex-wrap: wrap;
-      margin: auto 180px;
+      margin: auto 100px;
       justify-content: space-between;
     }
     @include breakpoint-up(xlarge) {
@@ -32,7 +36,7 @@
     border-radius: 0px 0px 15px 15px;
     display: flex;
     @include breakpoint-up(medium) {
-      width: 50%;
+      width: 45%;
     }
     @include breakpoint-up(large) {
       width: 40%;

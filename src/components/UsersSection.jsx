@@ -93,7 +93,7 @@ function UsersSection() {
     };
 
     return (
-        <section id="sectionTwo" className="users">
+        <section id="sectionThree" className="users">
             <h1 className="users__title">Section Three</h1>
             <div className="flex flex-jc-c">
                 <input
