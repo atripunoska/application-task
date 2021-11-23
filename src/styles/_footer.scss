@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  width: calc(100% - 145px);
+  padding: 20px 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+
+  &__logo {
+    width: 122px;
+  }
+  &__widgets {
+    display: flex;
+    flex-wrap: wrap;
+    .footer__menu-list {
+      list-style: none;
+      margin: 0;
+
+      :not(:last-child) {
+        margin-bottom: 10px;
+      }
+      a {
+        text-decoration: underline;
+        color: $black;
+        font-size: $font-sm;
+      }
+    }
+    .footer__menu-name {
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+  .footer__menu {
+    width: 260px;
+  }
+}
