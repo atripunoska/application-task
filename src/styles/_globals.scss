@@ -1,0 +1,72 @@
+@import "./mixins";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ac-c {
+    align-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-ai-fe {
+    align-items: flex-end;
+  }
+}
+
+//font size
+$font-sm: 0.875rem;
+$font-med: 1.125rem;
+
+
+//Visibility
+.d-none {
+  display: none;
+}
+.d-none-md {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+.d-none-lg {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.d-none-xl {
+  @include breakpoint-up(xlarge) {
+    display: none;
+  }
+}
