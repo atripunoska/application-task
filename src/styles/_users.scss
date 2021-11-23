@@ -1,0 +1,129 @@
+.users {
+  @include breakpoint-up(large) {
+    padding-top: 153px;
+    padding-bottom: 74px;
+  }
+  padding: 50px;
+  background: $primary;
+  &__title {
+    @include breakpoint-up(large) {
+      margin-left: 280px;
+    }
+    margin-bottom: 84px;
+    font-size: 42px;
+    color: $secondary;
+  }
+  .user-list {
+    @include breakpoint-up(large) {
+      width: 1090px;
+    }
+
+    width: auto;
+    margin: 80px auto 0px auto;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+      li {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .user {
+    background-color: $white;
+    padding: 20px 25px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+
+    &__image {
+      flex-basis: 50px;
+      margin-right: 10px;
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    &__trigger {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      text-align: left;
+
+      cursor: pointer;
+    }
+    &__age {
+      font-size: 0.8rem;
+      color: $grayishBlack;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    &__extra-info {
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      &.show {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+  &__empty {
+    text-align: center;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    background-color: $white;
+    font-weight: bold;
+    padding: 30px;
+  }
+  &__input {
+    @include breakpoint-up(medium) {
+      width: auto;
+      padding: 10px 15px;
+    }
+    @include breakpoint-up(large) {
+      padding: 25px 35px;
+      width: 350px;
+    }
+    width: 180px;
+    padding: 10px 15px;
+    border: 1px solid $green;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 16px;
+    color: $gray;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__button {
+    @include breakpoint-up(medium) {
+      padding: 15px 35px;
+    }
+    @include breakpoint-up(large) {
+      padding: 23px 55px;
+    }
+    padding: 10px 20px;
+    background-color: $white;
+    color: $gray;
+    border: 1px solid $gray;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
