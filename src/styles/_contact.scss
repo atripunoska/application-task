@@ -1,0 +1,84 @@
+.contact {
+  background-image: url("../assets/images/Intersection\ 1.png");
+  @include breakpoint-up(large) {
+    padding: 155px 0 75px 0;
+  }
+  padding: 50px;
+  background-size: cover;
+  background-repeat: space no-repeat;
+  background-position: top center;
+  &__title {
+    @include breakpoint-up(large) {
+      margin-left: 280px;
+      margin-bottom: 60px;
+      width: auto;
+    }
+    margin: 0 auto 60px auto;
+    color: $white;
+    font-size: 42px;
+  }
+  &__form {
+    @include breakpoint-up(large) {
+      width: 810px;
+    }
+    @include breakpoint-up(medium) {
+      width: 690px;
+    }
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px 50px;
+
+    &_title {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    &_wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .col {
+      flex: 100%;
+      @include breakpoint-up(large) {
+        flex: 45% 0;
+      }
+      margin-bottom: 40px;
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__input {
+    border-radius: 15px;
+    background-color: $white;
+    border: 1px solid $white;
+    padding: 12px ​15px;
+    box-shadow: none;
+    padding: 12px 15px;
+    display: block;
+    width: 100%;
+  }
+  textarea {
+    resize: none;
+  }
+  &__button {
+    font-size: $font-sm;
+    background-color: $black;
+    border-radius: 10px;
+    box-shadow: none;
+    color: $white;
+    padding: 10px 40px;
+    display: inline-block;
+    border-color: transparent;
+
+    text-transform: uppercase;
+    transition: background-color 200ms ease-in-out;
+    &:hover {
+      background-color: $green;
+    }
+  }
+}
