@@ -50,6 +50,31 @@ $font-sm: 0.875rem;
 $font-med: 1.125rem;
 
 
+//Buttons
+button {
+  background-color: #00e0ff;
+  border-color: #00e0ff;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  &-dark {
+    background-color: #221f1f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+    border-color: #221f1f;
+    box-shadow: 0px 8px 0px #00000033;
+    border-radius: 30px;
+  }
+}
+
+
+
 //Visibility
 .d-none {
   display: none;

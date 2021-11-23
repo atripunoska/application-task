@@ -4,6 +4,7 @@ import TeasersSection from "./components/TeasersSection";
 import UsersSection from "./components/UsersSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import './styles/main.scss'
 
 function App() {
   return (
