@@ -11,22 +11,22 @@ function TeasersSection() {
             <h1 className="teasers__title">Section Two</h1>
             <div className="teasers__grid">
                 <TeaserCard
-                    title="Teaser 1"
+                    title="Teaser title"
                     img={img1}
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc enim ligula, auctor rhoncus massa non, congue dignissim sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
                 />
                 <TeaserCard
-                    title="Teaser 2"
+                    title="Teaser title"
                     img={img2}
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 />
                 <TeaserCard
-                    title="Teaser 3"
+                    title="Teaser title"
                     img={img3}
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc enim ligula, auctor rhoncus massa non, congue dignissim sapien."
                 />
                 <TeaserCard
-                    title="Teaser 4"
+                    title="Teaser title"
                     img={img4}
                     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc enim ligula, auctor rhoncus massa non, congue dignissim sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae Vestibulum ante ipsum…"
                 />
