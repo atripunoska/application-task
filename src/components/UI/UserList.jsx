@@ -21,9 +21,9 @@ function UserList(props) {
                     </button>
                     <div className={`user__extra-info ${userClicked ? "show" : ""}`}>
                         <strong>Full Info for the user</strong>
-                        <div> First Name: {props.users.firstname}</div>
-                        <div> Last Name: {props.users.lastname}</div>
-                        <div> Age: {props.users.age}</div>
+                        <div> <span className="">First Name:</span> {props.users.firstname}</div>
+                        <div> <span> Last Name:</span> {props.users.lastname}</div>
+                        <div> <span>Age: {props.users.age}</span></div>
                     </div>
                 </article>
             </li>

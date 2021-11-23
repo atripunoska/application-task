@@ -1,17 +1,21 @@
 .contact {
   background-image: url("../assets/images/Intersection\ 1.png");
+  @include breakpoint-up(medium) {
+    padding: 50px 0;
+  }
   @include breakpoint-up(large) {
     padding: 155px 0 75px 0;
   }
-  @include breakpoint-up(medium) {
-    padding: 50px;
-  }
+
   padding: 50px 15px;
 
   background-size: cover;
   background-repeat: space no-repeat;
   background-position: top center;
   &__title {
+    @include breakpoint-up(medium) {
+      margin-left: 50px;
+    }
     @include breakpoint-up(large) {
       margin-left: 280px;
       margin-bottom: 60px;
@@ -22,13 +26,15 @@
     font-size: 42px;
   }
   &__form {
-    @include breakpoint-up(large) {
-      width: 810px;
-    }
     @include breakpoint-up(medium) {
       width: 690px;
       padding: 40px 50px;
     }
+
+    @include breakpoint-up(large) {
+      width: 810px;
+    }
+
     background-color: rgba(255, 255, 255, 0.85);
     width: 100%;
     margin: auto;
@@ -56,16 +62,20 @@
     display: block;
     font-size: 18px;
     margin-bottom: 10px;
+    font-family: "Helvetica Neue Light", sans-serif;
   }
   &__input {
     border-radius: 15px;
     background-color: $white;
     border: 1px solid $white;
-    padding: 12px ​15px;
+    padding: 12px 15px;
     box-shadow: none;
     padding: 12px 15px;
     display: block;
     width: 100%;
+    &:focus{
+      outline: none;
+    }
   }
   textarea {
     resize: none;
@@ -77,9 +87,10 @@
     box-shadow: none;
     color: $white;
     padding: 10px 40px;
+    width: 200px;
     display: inline-block;
     border-color: transparent;
-
+    font-family: "Helvetica Neue Light", sans-serif;
     text-transform: uppercase;
     transition: background-color 200ms ease-in-out;
     &:hover {

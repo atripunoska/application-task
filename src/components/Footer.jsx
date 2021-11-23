@@ -95,6 +95,7 @@ function Footer() {
             <FooterMenu
                 title={widget.title}
                 widgetLinks={widget.widgetLinks}
+                key={Math.random()}
             ></FooterMenu>
         ));
         return footerWidgetsList;

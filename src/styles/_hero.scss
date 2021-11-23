@@ -10,11 +10,11 @@
   background-repeat: space no-repeat;
   background-position: top center;
   &__title {
-    @include breakpoint-up(large) {
-      margin-left: 280px;
-    }
     @include breakpoint-up(medium) {
       margin-left: 50px;
+    }
+    @include breakpoint-up(large) {
+      margin-left: 280px;
     }
     margin-left:15px;
     font-size: 42px;

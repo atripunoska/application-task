@@ -4,11 +4,14 @@
     padding-bottom: 88px;
   }
   @include breakpoint-up(medium) {
-    padding: 50px;
+    padding: 50px 0;
   }
   padding: 50px 15px;
 
   > h1 {
+    @include breakpoint-up(medium) {
+      margin-left: 50px;
+    }
     @include breakpoint-up(large) {
       margin-left: 280px;
     }
@@ -64,6 +67,8 @@
   &__title {
     font-size: 32px;
     margin-bottom: 25px;
+    font-family: "Helvetica Neue Medium", sans-serif;
+    font-weight: bold;
   }
 
   &__description {

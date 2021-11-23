@@ -108,9 +108,9 @@ function UsersSection() {
             <div className="user-list">
                 <ul>
                     {foundUsers && foundUsers.length > 0 ? (
-                        foundUsers.map((user) => <UserList users={user} />)
+                        foundUsers.map((user) => <UserList users={user} key={user.id}/>)
                     ) : (
-                        <li className="users__empty">Results are empty</li>
+                        <li className="users__empty" key="not-found">Results are empty</li>
                     )}
                 </ul>
             </div>
