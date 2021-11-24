@@ -17,26 +17,27 @@ This project is simple one-page application with four different sections: Hero s
 
 ## Technologies
 Project is created with:
+
 - HTML5
 - SCSS
 - React
 
 ## Installation
 
-Download or clone the repository.
+[Download](https://github.com/atripunoska/application-task/archive/refs/heads/main.zip) or clone the repository.
 1. Clone the repo
 ```sh 
 git clone https://github.com/atripunoska/application-task.git
 ```
 2. You will need node and npm installed globally on your machine.
 
-3. Then install NPM packages
+3. To install NPM packages navigate in the project folder and run
 ```sh
 npm install
 ```
 
 ## Usage
-
+To start the project run the command in the project folder
 ```sh
 npm start
 ```
